@@ -13,17 +13,13 @@ document.getElementById('toggle-password').addEventListener('click', function() 
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Simulate authentication logic
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // For demonstration purposes, we will assume the login is always successful.
-    // In a real application, you would validate the credentials and handle errors appropriately.
-    if (username && password) {
-        // Redirect to the home page
+  
+    if (username && password) {        
         window.location.href = 'index.html';
-    } else {
-        // Handle invalid login attempt
+    } else {        
         alert('Invalid username or password');
     }
 });

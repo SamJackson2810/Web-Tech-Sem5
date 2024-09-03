@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and Event Handling - SJR VaxGuard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">SJR VaxGuard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li>
+                        <li class="nav-item"><a class="nav-link" href="job.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="dom-demo.html">DOM & JS Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <h2>DOM and Event Handling Example</h2>
+
+        <!-- Change Text Example -->
+        <div class="mb-4">
+            <p id="demo">Click the button to change this text.</p>
+            <button id="changeTextButton" class="btn btn-primary">Change Text</button>
+        </div>
+
+        <!-- Find Shortest and Longest Word -->
+        <div class="mb-4">
+            <input type="text" id="inputText" class="form-control" placeholder="Enter text">
+            <button id="findWordsButton" class="btn btn-primary mt-2">Find Shortest and Longest Word</button>
+            <p id="shortestWord">Shortest word: <span id="shortest"></span></p>
+            <p id="longestWord">Longest word: <span id="longest"></span></p>
+        </div>
+
+        <!-- Calculate BMI -->
+        <div class="mb-4">
+            <input type="number" id="weight" class="form-control" placeholder="Enter weight (kg)">
+            <input type="number" id="height" class="form-control mt-2" placeholder="Enter height (m)">
+            <button id="calculateBMIButton" class="btn btn-primary mt-2">Calculate BMI</button>
+            <p id="bmiResult">BMI: <span id="bmi"></span></p>
+        </div>
+
+        <!-- Check if a Word is Present -->
+        <div class="mb-4">
+            <input type="text" id="sentence" class="form-control" placeholder="Enter sentence">
+            <input type="text" id="wordToCheck" class="form-control mt-2" placeholder="Enter word to check">
+            <button id="checkWordButton" class="btn btn-primary mt-2">Check if Word is Present</button>
+            <p id="wordPresenceResult">Is the word present? <span id="wordPresence"></span></p>
+        </div>
+
+        <!-- Convert Currency -->
+        <div class="mb-4">
+            <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+            <input type="number" id="fromRate" class="form-control mt-2" placeholder="From rate">
+            <input type="number" id="toRate" class="form-control mt-2" placeholder="To rate">
+            <button id="convertCurrencyButton" class="btn btn-primary mt-2">Convert Currency</button>
+            <p id="currencyResult">Converted Amount: <span id="convertedAmount"></span></p>
+        </div>
+
+        <!-- Reverse a Number -->
+        <div class="mb-4">
+            <input type="number" id="number" class="form-control" placeholder="Enter number">
+            <button id="reverseNumberButton" class="btn btn-primary mt-2">Reverse Number</button>
+            <p id="reverseNumberResult">Reversed Number: <span id="reversedNumber"></span></p>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 SJR VaxGuard. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script/dom-events.js"></script>
+</body>
+</html>
